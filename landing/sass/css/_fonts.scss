@@ -1,0 +1,30 @@
+/*
+ * Copyright lowRISC contributors (OpenTitan project).
+ * Licensed under the Apache License, Version 2.0, see LICENSES for details.
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Livvic';
+	src: url('/fonts/Livvic-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Livvic';
+	src: url('/fonts/Livvic-Regular.ttf') format('truetype');
+	font-weight: regular;
+	font-style: normal;
+}

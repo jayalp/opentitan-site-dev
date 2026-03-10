@@ -1,0 +1,37 @@
+# Copyright lowRISC contributors (OpenTitan project).
+# Licensed under the Apache License, Version 2.0, see LICENSES for details.
+# SPDX-License-Identifier: Apache-2.0
+
+title = "Open source silicon root of trust (RoT)"
+base_url = "https://opentitan.org"
+compile_sass = true
+build_search_index = false
+
+[markdown]
+#highlight_code = false
+
+[extra]
+description = """
+The first open source project building a transparent, high-quality reference
+design and integration guidelines for silicon root of trust (RoT) chips
+"""
+github = "https://github.com/lowRISC/opentitan"
+
+[extra.email]
+get_involved = "get-involved@opentitan.org"
+contact = "pilots@opentitan.org"
+
+[extra.blog]
+announce = "https://security.googleblog.com/2019/11/opentitan-open-sourcing-transparent.html"
+one_year = "https://security.googleblog.com/2020/12/opentitan-at-one-year-open-source.html"
+
+[extra.partner]
+lowrisc = "https://www.lowrisc.org/"
+ethzurich = "https://ethz.ch"
+gd = "https://www.gi-de.com/"
+google = "https://opensource.google/"
+nuvoton = "https://www.nuvoton.com"
+wd = "https://www.westerndigital.com/"
+seagate = "https://www.seagate.com"
+winbond = "https://www.winbond.com"
+hackthesilicon = "https://hackthesilicon.com"

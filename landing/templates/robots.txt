@@ -1,0 +1,13 @@
+{# Copyright lowRISC contributors (OpenTitan project). #}
+{# Licensed under the Apache License, Version 2.0, see LICENSES for details. #}
+{# SPDX-License-Identifier: Apache-2.0 #}
+
+{% if config.base_url == "https://staging.opentitan.org" %}
+User-agent: *
+Disallow: /
+{% else %}
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: {{ get_url(path="sitemap.xml") }}
+{% endif %}

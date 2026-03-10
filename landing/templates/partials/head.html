@@ -1,0 +1,38 @@
+<!--
+Copyright lowRISC contributors (OpenTitan project).
+Licensed under the Apache License, Version 2.0, see LICENSES for details.
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="Description" content="{{ config.extra.description }}">
+    <meta property="og:title" content="{{ page.title | default(value=config.title)}} | OpenTitan">
+    <meta property="twitter:title" content="{{ page.title | default(value=config.title)}} | OpenTitan">
+    <meta property="og:image" content="{{ get_url(path="opentitan.png") }}">
+    <meta property="twitter:image:src" content="{{ get_url(path="opentitan.png") }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:description" content="{{ config.extra.description }}">
+    <meta property="twitter:description" content="{{ config.extra.description }}">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="apple-touch-icon.png") }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="favicon-32x32.png") }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") }}">
+    <link rel="shortcut icon" href="{{ get_url(path="favicon.ico") }}">
+    <meta name="msapplication-TileColor" content="#c27bcf">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Privacy-friendly analytics by Plausible -->
+    <script async src="https://plausible.io/js/pa-euqgRpdcbc1W3lG2d5OiE.js"></script>
+    <script>
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+    </script>
+
+    <title>{{ page.title | default(value=config.title)}} | OpenTitan</title>
+</head>

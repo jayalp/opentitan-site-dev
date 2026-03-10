@@ -1,0 +1,150 @@
+<!--
+Copyright lowRISC contributors (OpenTitan project).
+
+SPDX-License-Identifier: CC-BY-SA-4.0 AND Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {% include "partials/head.html" %}
+
+    <link rel="stylesheet" href="{{ get_url(path="css/landing.css") }}">
+</head>
+
+<body>
+  <svg style="width: 0; height: 0; position: absolute; opacity: 0;">
+    <defs>
+      <linearGradient id="a" x1="0%" x2="100%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="#4BC0C8" />
+        <stop offset="52.5%" stop-color="#C779D0" />
+        <stop offset="100%" stop-color="#FEAC5E" />
+      </linearGradient>
+      <path id="b" vector-effect="non-scaling-stroke"
+        d="M61 127v30h31v39c0 2-2 4-5 4h-5v15H3v-79h14v-5c0-2 2-4 5-4h39zm135 0c2 0 4 2 4 4v5h14v79h-79v-15h-4c-2 0-4-2-4-4v-39h30v-30h39zM57 161H38v19h19v-19zm122 0h-18v19h18v-19zm-35-87v69H75V74h69zm71-71v79h-15v5c0 3-2 5-4 5h-39V61h-30V22c0-3 2-5 4-5h5V3h79zM82 3v14h5c3 0 5 2 5 5v39H61v31H22c-3 0-5-2-5-5v-5H3V3h79zm79 54h19V38h-19v19zM57 57V38H38v19h19z" />
+      <path id="c" vector-effect="non-scaling-stroke"
+        d="M182 112v39h32c2 0 4 2 4 4v23c0 2-2 4-4 4h-32v32c0 2-2 4-4 4h-23c-2 0-4-2-4-4v-32h-39v-27c0-3 1-4 4-4h35v-35c0-3 1-4 4-4h27zm-119 0c2 0 4 1 4 3v36h35c3 0 4 1 4 3v28H67v32c0 2-2 4-4 4H40c-2 0-4-2-4-4v-32H4c-2 0-4-2-4-4v-23c0-2 2-4 4-4h32v-39h27zm77-34v62H78V78h62zM63 0c2 0 4 2 4 4v32h39v27c0 3-1 4-4 4H67v35c0 3-1 4-4 4H36V67H4c-2 0-4-2-4-4V40c0-2 2-4 4-4h32V4c0-2 2-4 4-4h23zm115 0c2 0 4 2 4 4v32h32c2 0 4 2 4 4v23c0 2-2 4-4 4h-32v39h-27c-2 0-4-1-4-3V67h-35c-3 0-4-1-4-3V36h39V4c0-2 2-4 4-4h23z" />
+      <path id="d" vector-effect="non-scaling-stroke"
+        d="M187 117v8h27c2 0 4 1 4 3v24c0 2-2 4-4 4h-27v31h-31v27c0 2-2 4-4 4h-24c-2 0-3-2-3-4v-27h-8v-27c0-2 2-4 4-4h35v-35c0-2 2-4 4-4h27zm-129 0c2 0 4 2 4 4v35h35c2 0 4 2 4 4v27h-8v27c0 2-1 4-3 4H66c-2 0-4-2-4-4v-27H31v-31H4c-2 0-4-2-4-4v-24c0-2 2-3 4-3h27v-8h27zm82-39v62H78V78h62zM90 0c2 0 3 2 3 4v27h8v27c0 2-2 4-4 4H62v35c0 2-2 4-4 4H31v-8H4c-2 0-4-1-4-3V66c0-2 2-4 4-4h27V31h31V4c0-2 2-4 4-4h24zm62 0c2 0 4 2 4 4v27h31v31h27c2 0 4 2 4 4v24c0 2-2 3-4 3h-27v8h-27c-2 0-4-2-4-4V62h-35c-2 0-4-2-4-4V31h8V4c0-2 1-4 3-4h24z" />
+    </defs>
+  </svg>
+
+  {% include "partials/header.html" %}
+
+  <main id="main" role="main">
+    <section id="partners" class="partners light-bg">
+      <h2 class="h2">Members & Contributors</h2>
+      <div class="partner-list">
+        <a href="{{ config.extra.partner.lowrisc }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/lowrisc.svg" alt="lowRISC">
+        </a>
+        <a href="{{ config.extra.partner.ethzurich }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/eth-zurich.svg" alt="ETH Zurich">
+        </a>
+        <a href="{{ config.extra.partner.gd }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/giesecke.png" alt="Giesecke + Devrient">
+        </a>
+        <a href="{{ config.extra.partner.google }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/google.svg" alt="Google">
+        </a>
+        <a href="{{ config.extra.partner.nuvoton }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/nuvoton.svg" alt="nuvoTon">
+        </a>
+        <a href="{{ config.extra.partner.wd }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/western-digital.svg" alt="Western Digital">
+        </a>
+        <a href="{{ config.extra.partner.seagate }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/seagate.svg" alt="Seagate">
+        </a>
+        <a href="{{ config.extra.partner.winbond }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/winbond.svg" alt="Winbond Electronics Corporation">
+        </a>
+        <a href="{{ config.extra.partner.hackthesilicon }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/hackthesilicon.svg" alt="HackTheSilicon">
+        </a>
+      </div>
+
+      <div class="partner-quote">
+        <ul class="js-partner-quotes">
+          {% set data = load_data(path="data/partner_quotes.toml") %}
+          {% for quote in data.quotes %}
+          <li class="partner-quote__item">
+            <blockquote>
+              <p class="quote quote--small js-quote-text">{{ quote.quote }}</p>
+              <footer class="js-quote-partner">
+                {{ quote.partner }}
+              </footer>
+            </blockquote>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+
+    <section id="join-the-project" class="cta">
+      <h2 class="sr-only">Join the Project</h2>
+      <p class="cta__body quote">
+        Interested in participating in the project?
+      </p>
+      <a href="mailto:{{ config.extra.email.get_involved }}" class="btn">Let us know</a>
+    </section>
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  <script src="{{ get_url(path="js/tiny-slider.js") }}"></script>
+  <script src="{{ get_url(path="js/theme-changer.js") }}"></script>
+
+  <script>
+    // Enable JS features
+    document.documentElement.classList.remove('no-js');
+
+    // Tiny Slider for Quotes
+    var slider = tns({
+      container: '.js-partner-quotes',
+      items: 1,
+      autoplay: false,
+      slideBy: 'page',
+      mouseDrag: true,
+      autoHeight: true,
+      nav: false,
+      swipeAngle: 30,
+      loop: false,
+      preventScrollOnTouch: 'auto',
+      controlsPosition: 'bottom',
+      controlsText: [
+        "<span class='sr-only'>prev</span><svg viewBox='0 0 40 40'><path fill='currentColor' fill-rule='evenodd' d='M16 20l9-6v12z' focusable='false'/></svg>",
+        "<span class='sr-only'>next</span><svg viewBox='0 0 40 40'><path fill='currentColor' fill-rule='evenodd' d='M24 20l-9-6v12z' focusable='false'/></svg>"]
+    });
+
+    if (document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        slider.updateSliderHeight()
+      })
+    }
+
+    // control animation on intro area
+    const intro = document.getElementById('intro');
+    intro.addEventListener('mouseenter', e => {
+      if (intro.classList.contains('animate')) {
+        return
+      }
+      else {
+        intro.classList.add('animate');
+        setTimeout(function () {
+          intro.classList.remove('animate');
+        }, 2200);
+      }
+    })
+
+    const partnerList = document.querySelector('.js-partner-quotes');
+    // fisher-yates shuffle
+    for (let i = partnerList.children.length; i >= 0; i--) {
+      partnerList.appendChild(partnerList.children[Math.random() * i | 0]);
+    }
+
+  </script>
+</body>
+
+</html>

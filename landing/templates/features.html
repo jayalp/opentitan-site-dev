@@ -1,0 +1,172 @@
+<!--
+Copyright lowRISC contributors (OpenTitan project).
+
+SPDX-License-Identifier: CC-BY-SA-4.0 AND Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {% include "partials/head.html" %}
+
+    <link rel="stylesheet" href="{{ get_url(path="css/landing.css") }}">
+</head>
+
+<body>
+  <svg style="width: 0; height: 0; position: absolute; opacity: 0;">
+    <defs>
+      <linearGradient id="a" x1="0%" x2="100%" y1="100%" y2="0%">
+        <stop offset="0%" stop-color="#4BC0C8" />
+        <stop offset="52.5%" stop-color="#C779D0" />
+        <stop offset="100%" stop-color="#FEAC5E" />
+      </linearGradient>
+      <path id="b" vector-effect="non-scaling-stroke"
+        d="M61 127v30h31v39c0 2-2 4-5 4h-5v15H3v-79h14v-5c0-2 2-4 5-4h39zm135 0c2 0 4 2 4 4v5h14v79h-79v-15h-4c-2 0-4-2-4-4v-39h30v-30h39zM57 161H38v19h19v-19zm122 0h-18v19h18v-19zm-35-87v69H75V74h69zm71-71v79h-15v5c0 3-2 5-4 5h-39V61h-30V22c0-3 2-5 4-5h5V3h79zM82 3v14h5c3 0 5 2 5 5v39H61v31H22c-3 0-5-2-5-5v-5H3V3h79zm79 54h19V38h-19v19zM57 57V38H38v19h19z" />
+      <path id="c" vector-effect="non-scaling-stroke"
+        d="M182 112v39h32c2 0 4 2 4 4v23c0 2-2 4-4 4h-32v32c0 2-2 4-4 4h-23c-2 0-4-2-4-4v-32h-39v-27c0-3 1-4 4-4h35v-35c0-3 1-4 4-4h27zm-119 0c2 0 4 1 4 3v36h35c3 0 4 1 4 3v28H67v32c0 2-2 4-4 4H40c-2 0-4-2-4-4v-32H4c-2 0-4-2-4-4v-23c0-2 2-4 4-4h32v-39h27zm77-34v62H78V78h62zM63 0c2 0 4 2 4 4v32h39v27c0 3-1 4-4 4H67v35c0 3-1 4-4 4H36V67H4c-2 0-4-2-4-4V40c0-2 2-4 4-4h32V4c0-2 2-4 4-4h23zm115 0c2 0 4 2 4 4v32h32c2 0 4 2 4 4v23c0 2-2 4-4 4h-32v39h-27c-2 0-4-1-4-3V67h-35c-3 0-4-1-4-3V36h39V4c0-2 2-4 4-4h23z" />
+      <path id="d" vector-effect="non-scaling-stroke"
+        d="M187 117v8h27c2 0 4 1 4 3v24c0 2-2 4-4 4h-27v31h-31v27c0 2-2 4-4 4h-24c-2 0-3-2-3-4v-27h-8v-27c0-2 2-4 4-4h35v-35c0-2 2-4 4-4h27zm-129 0c2 0 4 2 4 4v35h35c2 0 4 2 4 4v27h-8v27c0 2-1 4-3 4H66c-2 0-4-2-4-4v-27H31v-31H4c-2 0-4-2-4-4v-24c0-2 2-3 4-3h27v-8h27zm82-39v62H78V78h62zM90 0c2 0 3 2 3 4v27h8v27c0 2-2 4-4 4H62v35c0 2-2 4-4 4H31v-8H4c-2 0-4-1-4-3V66c0-2 2-4 4-4h27V31h31V4c0-2 2-4 4-4h24zm62 0c2 0 4 2 4 4v27h31v31h27c2 0 4 2 4 4v24c0 2-2 3-4 3h-27v8h-27c-2 0-4-2-4-4V62h-35c-2 0-4-2-4-4V31h8V4c0-2 1-4 3-4h24z" />
+    </defs>
+  </svg>
+
+  {% include "partials/header.html" %}
+
+  <main id="main" role="main">
+ 
+    <section id="features" class="features light-bg">
+      <h2 class="h2">Features</h2>
+      <ol class="feature-list">
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">Independently managed</h3>
+          <p class="bodytext feature__body">
+            OpenTitan is stewarded by
+            <a href="{{ config.extra.partner.lowrisc }}">lowRISC</a>, a
+            not-for-profit company that uses collaborative engineering to
+            develop and maintain open source silicon designs and tools for the
+            long term.
+          </p>
+        </li>
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">Open source</h3>
+          <p class="bodytext feature__body">
+            OpenTitan is an open source project with leading not-for-profit,
+            academic, and commercial organizations committed to its development
+            and expansion.
+          </p>
+        </li>
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">Security through transparency</h3>
+          <p class="bodytext feature__body">
+            As an open source project, OpenTitan enables the larger community
+            to proactively audit, evaluate, and improve the security properties
+            of the design.
+          </p>
+        </li>
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">High-quality IP</h3>
+          <p class="bodytext feature__body">
+            OpenTitan is developed by engineers and researchers from ETH
+            Zürich, G+D Mobile Security, Google, lowRISC, Nuvoton Technology,
+            and Western Digital. Our community brings ideas and expertise from
+            a variety of perspectives.
+          </p>
+        </li>
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">Modern architecture</h3>
+          <p class="bodytext feature__body">
+            OpenTitan is designed to serve as the system root of trust by
+            actively mediating access to the first-stage boot firmware. It is
+            built upon the quality constructs and security principles used to
+            create
+            <a href="{{ config.extra.blog.announce }}">Google's Titan chips</a>.
+          </p>
+        </li>
+        <li class="feature-list__item">
+          <h3 class="h3 feature__headline">Vendor- and platform-agnostic</h3>
+          <p class="bodytext feature__body">
+            Because it is not proprietary to a specific vendor or platform,
+            OpenTitan can be integrated with data center servers, peripherals,
+            storage devices, and other hardware, helping you reduce costs and reach more
+            customers.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="learn-more" class="cta">
+      <h2 class="sr-only">Learn more</h2>
+      <p class="cta__body quote">
+        OpenTitan helps to make the silicon root of trust (RoT) more transparent,
+        trustworthy, and ultimately, secure.
+      </p>
+      <a href="{{ config.extra.blog.announce }}" class="btn" aria-label="Learn more about OpenTitan">Learn more</a>
+    </section>
+
+    <section id="integrate" class="cta">
+      <h2 class="sr-only">Contribute to OpenTitan</h2>
+      <p class="cta__body quote">
+        Interested in contributing to the OpenTitan project?
+      </p>
+      <a href="mailto:{{ config.extra.email.get_involved }}" class="btn">Contact us</a>
+    </section>
+
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  <script src="{{ get_url(path="js/tiny-slider.js") }}"></script>
+  <script src="{{ get_url(path="js/theme-changer.js") }}"></script>
+
+  <script>
+    // Enable JS features
+    document.documentElement.classList.remove('no-js');
+
+    // Tiny Slider for Quotes
+    var slider = tns({
+      container: '.js-partner-quotes',
+      items: 1,
+      autoplay: false,
+      slideBy: 'page',
+      mouseDrag: true,
+      autoHeight: true,
+      nav: false,
+      swipeAngle: 30,
+      loop: false,
+      preventScrollOnTouch: 'auto',
+      controlsPosition: 'bottom',
+      controlsText: [
+        "<span class='sr-only'>prev</span><svg viewBox='0 0 40 40'><path fill='currentColor' fill-rule='evenodd' d='M16 20l9-6v12z' focusable='false'/></svg>",
+        "<span class='sr-only'>next</span><svg viewBox='0 0 40 40'><path fill='currentColor' fill-rule='evenodd' d='M24 20l-9-6v12z' focusable='false'/></svg>"]
+    });
+
+    if (document.fonts.ready) {
+      document.fonts.ready.then(() => {
+        slider.updateSliderHeight()
+      })
+    }
+
+    // control animation on intro area
+    const intro = document.getElementById('intro');
+    intro.addEventListener('mouseenter', e => {
+      if (intro.classList.contains('animate')) {
+        return
+      }
+      else {
+        intro.classList.add('animate');
+        setTimeout(function () {
+          intro.classList.remove('animate');
+        }, 2200);
+      }
+    })
+
+    const partnerList = document.querySelector('.js-partner-quotes');
+    // fisher-yates shuffle
+    for (let i = partnerList.children.length; i >= 0; i--) {
+      partnerList.appendChild(partnerList.children[Math.random() * i | 0]);
+    }
+
+  </script>
+</body>
+
+</html>

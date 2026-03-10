@@ -1,0 +1,43 @@
+<!--
+Copyright lowRISC contributors (OpenTitan project).
+Licensed under the Apache License, Version 2.0, see LICENSES for details.
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {% include "partials/head.html" %}
+
+    <link rel="stylesheet" href="{{ get_url(path="css/404.css") }}">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  {% include "partials/header.html" %}
+
+  <main id="main">
+    <div id="message">
+      <h1 id="title">404 Page Not Found</h1>
+      <p>Click on one of the following to hop back in.</p>
+      <ul>
+          <li><a href="{{ get_url(path="/") }}">Home Page</a></li>
+          <li><a href="/book/">Documentation Root</a></li>
+          <li><a href="/book/doc/getting_started/">Getting Started Guide</a></li>
+          <li><a href="{{ get_url(path="dashboard") }}">Dashboard</a></li>
+      </ul>
+    </div>
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  <script src="{{ get_url(path="js/theme-changer.js") }}"></script>
+  <script>
+    // Enable JS features
+    document.documentElement.classList.remove('no-js');
+  </script>
+</body>
+
+</html>

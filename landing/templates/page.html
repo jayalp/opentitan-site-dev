@@ -1,0 +1,36 @@
+<!--
+Copyright lowRISC contributors (OpenTitan project).
+Licensed under the Apache License, Version 2.0, see LICENSES for details.
+SPDX-License-Identifier: Apache-2.0
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    {% include "partials/head.html" %}
+
+    <link rel="stylesheet" href="{{ get_url(path="css/single.css") }}">
+</head>
+
+<body>
+  {% include "partials/header.html" %}
+
+  <main id="main" role="main" class="main-body light-bg">
+    <div class="content">
+      <h1>{{ page.title }}</h1>
+      {{ page.content | safe }}
+    </div>
+  </main>
+
+  {% include "partials/footer.html" %}
+
+  <script src="{{ get_url(path="js/theme-changer.js") }}"></script>
+
+  <script>
+    // Enable JS features
+    document.documentElement.classList.remove('no-js');
+  </script>
+</body>
+
+</html>

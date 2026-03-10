@@ -8,7 +8,7 @@ Copyright lowRISC contributors (OpenTitan project).
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-[OpenTitan](https://opentitan.org/) is an open source silicon Root of Trust (RoT) project. 
+OpenTitan is an open source silicon Root of Trust (RoT) project. 
 OpenTitan will make the silicon RoT design and implementation more transparent, trustworthy, and secure for enterprises, platform providers, and chip manufacturers. 
 
 ## OpenTitan Documentation 

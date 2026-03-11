@@ -47,6 +47,7 @@
     --domain-bg: #e9e9e9;
     --domain-fg: var(--text-black);
     --always-on: #dc143c;
+    --domain-dark-bg: #c9c9c9;
 
     --clock1-bg: #8bd6df;
     --clock2-bg: #6395ae;
@@ -165,6 +166,7 @@
 [grid-rows="4"] { grid-row: span 4; }
 [grid-rows="5"] { grid-row: span 5; }
 [grid-rows="6"] { grid-row: span 6; }
+[grid-rows="7"] { grid-row: span 7; }
 [grid-cols="2"] { grid-column: span 2; }
 [grid-cols="3"] { grid-column: span 3; }
 [grid-cols="4"] { grid-column: span 4; }
@@ -220,6 +222,10 @@
     /* Places the AON domain border in the middle of the gaps between blocks */
     padding: calc(0.5 * var(--padding) - var(--aon-width));
     margin: calc(-0.5 * var(--padding));
+}
+
+.domain.darker {
+    background-color: var(--domain-dark-bg);
 }
 
 .domain .domain-title {
@@ -714,6 +720,7 @@ a.block:visited {
 .arrow[arrow-y="4"] { --arrow-y: 4; }
 .arrow[arrow-y="5"] { --arrow-y: 5; }
 .arrow[arrow-y="6"] { --arrow-y: 6; }
+.arrow[arrow-y="7"] { --arrow-y: 7; }
 .arrow[arrow-span="2"] { --arrow-span: 2; }
 .arrow[arrow-span="3"] { --arrow-span: 3; }
 .arrow[arrow-span="4"] { --arrow-span: 4; }

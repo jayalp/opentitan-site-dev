@@ -13,6 +13,7 @@ OpenTitan will make the silicon RoT design and implementation more transparent, 
 
 ## OpenTitan Documentation 
 
+- [Disclosures](cvd-policy.md)
 - [Getting Started](/book/doc/getting_started) 
 - [Project Governance](../book/doc/project_governance)
 - [Contributing](../book/doc/contributing)

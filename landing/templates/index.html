@@ -127,6 +127,55 @@ SPDX-License-Identifier: CC-BY-SA-4.0 AND Apache-2.0
         </div>
       </div>
     </section>
+	
+	    <section id="partners" class="partners light-bg">
+      <h2 class="h2">Members & Contributors</h2>
+      <div class="partner-list">
+        <a href="{{ config.extra.partner.lowrisc }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/lowrisc.svg" alt="lowRISC">
+        </a>
+        <a href="{{ config.extra.partner.ethzurich }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/eth-zurich.svg" alt="ETH Zurich">
+        </a>
+        <a href="{{ config.extra.partner.gd }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/giesecke.png" alt="Giesecke + Devrient">
+        </a>
+        <a href="{{ config.extra.partner.google }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/google.svg" alt="Google">
+        </a>
+        <a href="{{ config.extra.partner.nuvoton }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/nuvoton.svg" alt="nuvoTon">
+        </a>
+        <a href="{{ config.extra.partner.wd }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/western-digital.svg" alt="Western Digital">
+        </a>
+        <a href="{{ config.extra.partner.seagate }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/seagate.svg" alt="Seagate">
+        </a>
+        <a href="{{ config.extra.partner.winbond }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/winbond.svg" alt="Winbond Electronics Corporation">
+        </a>
+        <a href="{{ config.extra.partner.hackthesilicon }}" class="partner" target="_blank">
+          <img src="https://static.opentitan.org/img/partners/hackthesilicon.svg" alt="HackTheSilicon">
+        </a>
+      </div>
+
+      <div class="partner-quote">
+        <ul class="js-partner-quotes">
+          {% set data = load_data(path="data/partner_quotes.toml") %}
+          {% for quote in data.quotes %}
+          <li class="partner-quote__item">
+            <blockquote>
+              <p class="quote quote--small js-quote-text">{{ quote.quote }}</p>
+              <footer class="js-quote-partner">
+                {{ quote.partner }}
+              </footer>
+            </blockquote>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
 
     <section id="learn-more" class="cta">
       <h2 class="sr-only">Learn more</h2>
